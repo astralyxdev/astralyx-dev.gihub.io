@@ -679,6 +679,7 @@ nav > .link::after {
   height: 200px;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 .cases-items > .item > .picture > .details {
   opacity: 0;
@@ -708,6 +709,7 @@ nav > .link::after {
           transform: translateY(100%);
 }
 .cases-items > .item > .picture > img {
+  border-radius: 16px;
   z-index: 1;
   pointer-events: none;
   width: 100%;
