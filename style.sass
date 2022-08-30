@@ -35,6 +35,28 @@ button
     text-align: center
     color: #FFFFFF
 
+.op-linar-btn-medium
+    text-decoration: none
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 0px 24px
+    gap: 6px
+    height: 48px
+    background: radial-gradient(100% 318.75% at 99.67% 0%, rgba(27, 49, 248, 0.16) 0%, rgba(52, 142, 248, 0.16) 48.56%, rgba(98, 27, 248, 0.16) 100%)
+    border-radius: 40px
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+    color: #1B31F8
+    &:hover
+        color: #FFFFFF
+        background: radial-gradient(100% 318.75% at 99.67% 0%, #1B31F8 0%, #348EF8 48.56%, #621BF8 100%)
+        
+
 .white-btn-tiny
     text-decoration: none
     display: flex
@@ -185,8 +207,23 @@ nav
             opacity: 1
             transform: translateY(20px)
 
+.fp-viewing-jobs
+    .header-logo
+        > .logo
+            background: url(img/dark-logo.svg)
+    header
+        height: 88px
+        backdrop-filter: blur(64px)
+        background: rgba(249, 248, 252, 0.8)
+        &::before
+            background: radial-gradient(50% 10568.34% at 50% 100%, rgba(22, 21, 26, 0.04) 0%, rgba(255, 255, 255, 0) 100%)
+    nav
+        > .link
+            color: rgba(22, 21, 26, 0.8)
 
-.fp-viewing-page4, .fp-viewing-footer
+
+
+.fp-viewing-page4
     header
         height: 88px
         backdrop-filter: blur(64px)
@@ -198,6 +235,14 @@ nav
         &::after
             opacity: 1
             transform: translateY(20px)
+
+.fp-viewing-footer
+    header
+        height: 88px
+        backdrop-filter: blur(64px)
+        background: rgba(22, 21, 26, 0.8)
+        &::before
+            background: radial-gradient(50% 10568.34% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%)
 
 .wrapper-service-github
     display: flex
@@ -475,6 +520,7 @@ nav
             height: 200px
             border-radius: 16px
             border: 1px solid #FFFFFF00
+            cursor: pointer
             > .details
                 opacity: 0
                 display: flex
@@ -493,6 +539,7 @@ nav
                     transition: .3s ease
                     transform: translateY(100%)
             > img
+                border-radius: 16px
                 z-index: 1
                 pointer-events: none
                 width: 100%
@@ -602,7 +649,104 @@ footer
         &:hover
             text-decoration: underline
 
+.page-jobs
+    background: #F9F8FC
 
+.header-pagejobs-info
+    padding: 64px 0 
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    gap: 8px
+    margin-top: 88px
+    > h2
+        font-family: 'Clash Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 64px
+        line-height: 120%
+        text-align: center
+        color: #16151A
+    > p
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        text-align: center
+        color: rgba(22, 21, 26, 0.8)
+
+.jobs-items
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+    gap: 24px
+    padding-bottom: 64px
+    > .item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background: #F9F8FC
+        border: 2px solid #FFFFFF
+        box-shadow: 0px 16px 64px -8px rgba(22, 21, 26, 0.04), 0px 4px 8px rgba(22, 21, 26, 0.04), inset 0px 0px 24px 8px rgba(255, 255, 255, 0.8)
+        border-radius: 16px
+        > .header
+            width: 100%
+            display: flex
+            flex-direction: column
+            gap: 8px
+            padding: 24px 24px 16px
+            > h3
+                font-family: 'Clash Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 24px
+                line-height: 30px
+                color: #16151A
+            > .company
+                display: flex
+                align-items: center
+                gap: 8px
+                img
+                    width: 24px
+                    height: 24px
+                p
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 22px
+                    color: #16151A
+        > .content
+            width: 100%
+            display: flex
+            flex-direction: column
+            padding: 24px
+            gap: 16px
+            background: url("img/linear-bg.svg") #F9F8FC
+            background-position: center
+            box-shadow: inset 0px 0px 24px 8px #F9F8FC
+            > .detail-list
+                display: grid
+                gap: 16px
+                grid-template-columns: 1fr 1fr
+                p
+                    &:first-child
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 22px
+                        color: rgba(22, 21, 26, 0.4)
+                    &:last-child
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 22px
+                        color: #16151A
+        > .op-linar-btn-medium
+            width: calc( 100% - 48px )
+            margin: 16px 24px 24px 24px
+                    
 
 
 @media screen and ( max-width: 1024px )
@@ -780,3 +924,30 @@ footer
             > p
                 font-size: 12px
                 line-height: 20px
+
+    .header-pagejobs-info
+        padding: 32px 0 
+        gap: 8px
+        margin-top: 88px
+        > h2
+            font-size: 32px
+        > p
+            font-size: 12px
+            line-height: 20px
+
+    .jobs-items
+        padding-bottom: 32px
+        > .item
+            > .header
+                > h3
+                    font-size: 16px
+                    line-height: 22px
+            > .content
+                > .detail-list
+                    p
+                        &:first-child
+                            font-size: 12px
+                            line-height: 20px
+                        &:last-child
+                            font-size: 12px
+                            line-height: 20px
