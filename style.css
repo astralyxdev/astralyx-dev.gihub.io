@@ -117,6 +117,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
+  padding-top: 104px;
 }
 .section.page4 {
   background: url(img/team-bg.jpg);
@@ -231,107 +232,13 @@ nav > .link::after {
   opacity: 0;
 }
 
-.fp-viewing-page1 .wrapper-service-github {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  opacity: 1;
-}
-.fp-viewing-page1 .container .header-pageone-info {
-  margin-top: 104px;
-}
-.fp-viewing-page1 .page1-check {
-  color: #fff;
-}
-.fp-viewing-page1 .page1-check::after {
-  opacity: 1;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.fp-viewing-page2 .header-logo > .logo {
-  background: url(img/dark-logo.svg);
-}
-.fp-viewing-page2 header {
-  height: 88px;
-  -webkit-backdrop-filter: blur(64px);
-          backdrop-filter: blur(64px);
-  background: rgba(249, 248, 252, 0.8);
-}
-.fp-viewing-page2 header::before {
-  background: radial-gradient(50% 10568.34% at 50% 100%, rgba(22, 21, 26, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
-}
-.fp-viewing-page2 nav > .link {
-  color: rgba(22, 21, 26, 0.8);
-}
-.fp-viewing-page2 .page2-check {
-  color: #16151A !important;
-}
-.fp-viewing-page2 .page2-check::after {
-  background: #16151A;
-  opacity: 1;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.fp-viewing-page3 header {
+.page-scrol header {
   height: 88px;
   -webkit-backdrop-filter: blur(64px);
           backdrop-filter: blur(64px);
   background: rgba(22, 21, 26, 0.8);
 }
-.fp-viewing-page3 header::before {
-  background: radial-gradient(50% 10568.34% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
-}
-.fp-viewing-page3 .page3-check {
-  color: #fff;
-}
-.fp-viewing-page3 .page3-check::after {
-  opacity: 1;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.fp-viewing-jobs .header-logo > .logo {
-  background: url(img/dark-logo.svg);
-}
-.fp-viewing-jobs header {
-  height: 88px;
-  -webkit-backdrop-filter: blur(64px);
-          backdrop-filter: blur(64px);
-  background: rgba(249, 248, 252, 0.8);
-}
-.fp-viewing-jobs header::before {
-  background: radial-gradient(50% 10568.34% at 50% 100%, rgba(22, 21, 26, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
-}
-.fp-viewing-jobs nav > .link {
-  color: rgba(22, 21, 26, 0.8);
-}
-
-.fp-viewing-page4 header {
-  height: 88px;
-  -webkit-backdrop-filter: blur(64px);
-          backdrop-filter: blur(64px);
-  background: rgba(22, 21, 26, 0.8);
-}
-.fp-viewing-page4 header::before {
-  background: radial-gradient(50% 10568.34% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
-}
-.fp-viewing-page4 .page4-check {
-  color: #fff;
-}
-.fp-viewing-page4 .page4-check::after {
-  opacity: 1;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.fp-viewing-footer header {
-  height: 88px;
-  -webkit-backdrop-filter: blur(64px);
-          backdrop-filter: blur(64px);
-  background: rgba(22, 21, 26, 0.8);
-}
-.fp-viewing-footer header::before {
+.page-scrol header::before {
   background: radial-gradient(50% 10568.34% at 50% 100%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -344,11 +251,6 @@ nav > .link::after {
           align-items: center;
   gap: 24px;
   padding-bottom: 64px;
-  -webkit-transform: translateY(120px);
-          transform: translateY(120px);
-  opacity: 0;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
 }
 
 .header-service {
@@ -842,7 +744,7 @@ nav > .link::after {
   -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 24px;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 .team-items > .item > .pictures {
   display: -webkit-box;
@@ -922,6 +824,7 @@ footer .link:hover {
 }
 
 .page-jobs {
+  margin-top: 104px;
   background: #F9F8FC;
 }
 
@@ -942,7 +845,6 @@ footer .link:hover {
           justify-content: center;
   text-align: center;
   gap: 8px;
-  margin-top: 88px;
 }
 .header-pagejobs-info > h2 {
   font-family: "Clash Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -1331,7 +1233,7 @@ footer .link:hover {
   .team-items {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
   }
   .team-items > .item > .pictures {
     height: 140px;
