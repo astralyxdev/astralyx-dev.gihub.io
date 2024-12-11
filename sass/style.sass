@@ -2,7 +2,7 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-family: "Glori Grotesk"
+    font-family: "Glori Grotesk", sans-serif
     user-select: none
 
 @mixin h1
@@ -10,24 +10,32 @@
     font-style: normal
     font-weight: 500
     line-height: 110%
+    @media (max-width: 640px)
+        font-size: 2.5rem
 
 @mixin h2
     font-size: 3.75rem
     font-style: normal
     font-weight: 500
     line-height: 110%
+    @media (max-width: 640px)
+        font-size: 2.25rem
 
 @mixin h3
     font-size: 2.5rem
     font-style: normal
     font-weight: 500
     line-height: 110%
+    @media (max-width: 640px)
+        font-size: 1.75rem
 
 @mixin h4
     font-size: 1.5rem
     font-style: normal
     font-weight: 500
     line-height: 110%
+    @media (max-width: 640px)
+        font-size: 1.25rem
 
 @mixin bt1
     font-size: 1.25rem
@@ -35,6 +43,8 @@
     font-weight: 300
     line-height: 140%
     letter-spacing: 0.025rem
+    @media (max-width: 640px)
+        font-size: 1rem
 
 @mixin bt2
     font-size: 1rem
@@ -42,6 +52,8 @@
     font-weight: 300
     line-height: 140%
     letter-spacing: 0.02rem
+    @media (max-width: 640px)
+        font-size: 0.875rem
 
 @mixin bt3
     font-size: 0.75rem
@@ -49,6 +61,8 @@
     font-weight: 300
     line-height: 140%
     letter-spacing: 0.015rem
+    @media (max-width: 640px)
+        font-size: 0.625rem
 
 @mixin ht1
     font-size: 1.25rem
@@ -56,6 +70,8 @@
     font-weight: 500
     line-height: 140%
     letter-spacing: 0.025rem
+    @media (max-width: 640px)
+        font-size: 1rem
 
 @mixin ht2
     font-size: 1rem
@@ -63,6 +79,8 @@
     font-weight: 500
     line-height: 140%
     letter-spacing: 0.02rem
+    @media (max-width: 640px)
+        font-size: 0.875rem
 
 @mixin ht3
     font-size: 0.75rem
@@ -70,9 +88,13 @@
     font-weight: 500
     line-height: 140%
     letter-spacing: 0.015rem
+    @media (max-width: 640px)
+        font-size: 0.625rem
 
 @mixin margin_section
     margin: 5rem 0
+    @media (max-width: 640px)
+        margin: 2rem 0
 
 html, body
     min-height: 100%
@@ -81,9 +103,7 @@ html, body
     scroll-behavior: smooth
 
 html
-    font-size: calc(1vw / 2)
-    @media ( max-width: 1512px )
-        font-size: calc(1vw / 1.1)
+    font-size: calc(1vw / 0.95)
     @media ( max-width: 1440px )
         font-size: calc(1vw / 0.98)
     @media ( max-width: 1024px )
@@ -94,6 +114,7 @@ html
         font-size: calc(1vw / 0.25)
 
 .radial_bg_top
+    mix-blend-mode: screen
     position: absolute
     left: 0
     right: 0
@@ -101,6 +122,7 @@ html
     z-index: -1
 
 .radial_bg_bot
+    mix-blend-mode: screen
     position: absolute
     width: 100%
     bottom: 0
@@ -119,6 +141,10 @@ img
     overflow: hidden
     justify-content: center
     width: 100%
+    background: url("../images/page_bg.jpg")
+    background-position: top
+    background-size: contain
+    isolation: isolate
 
 header
     width: 100%
@@ -127,6 +153,8 @@ section
     width: 100%
     padding: 0 1.5rem
     position: relative
+    @media (max-width: 640px)
+        padding: 0 1rem
 
 .container
     width: 100%
@@ -151,6 +179,9 @@ section
     background-clip: text
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    br
+        @media (max-width: 640px)
+            display: none
 
 .hero_subheading
     color: #999
@@ -242,6 +273,9 @@ section
     border: none
     transition: all 0.3s ease
     text-decoration: none
+    @media (max-width: 640px)
+        padding: 0rem 1rem
+        height: 2.5rem
     p
         color: #070709
         text-align: center
@@ -310,6 +344,8 @@ nav
     display: flex
     align-items: center
     gap: 2rem
+    @media (max-width: 640px)
+        display: none
     a
         color: var(--grey-text, #999)
         @include bt1
@@ -319,8 +355,9 @@ nav
 .header_logo
     display: flex
     img
-        height: 2rem
-
+        height: 2.25rem
+        @media (max-width: 640px)
+            height: 1.75rem
 .hero_form
     display: flex
     width: 100%
@@ -365,6 +402,9 @@ nav
         transition: all 0.3s ease
         color: #fff
         @include bt2
+        @media (max-width: 640px)
+            padding: 0.5rem 1rem
+            height: 2.5rem
         &::placeholder
             color: #999
             font-size: 1rem
@@ -414,9 +454,14 @@ nav
     flex-direction: column
     @include margin_section
     gap: 3rem
+    @media (max-width: 640px)
+        gap: 1.5rem
     h3
         @include h3
-        color: #fff
+        background: var(--gradient-1, linear-gradient(94deg, rgba(121, 123, 134, 0.80) 0.03%, #FFF 50%, rgba(134, 128, 122, 0.80) 99.97%))
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
         text-align: center
 
 .we_are_numbers
@@ -440,6 +485,13 @@ nav
         100%
             transform: rotate(360deg) translateY(-13.5rem)
 
+@media ( max-width: 768px )
+    @keyframes rotate_circle
+        0%
+            transform: rotate(0deg) translateY(-5.1rem)
+        100%
+            transform: rotate(360deg) translateY(-5.1rem)
+
 .we_are_number
     border-radius: 100rem
     background: var(--white-2, rgba(255, 255, 255, 0.02))
@@ -461,13 +513,13 @@ nav
             animation: rotate_circle 8s linear infinite
     &:nth-child(2)
         &::after
-            animation: rotate_circle 10s linear infinite
+            animation: rotate_circle 8s linear infinite forwards 0.5s
     &:nth-child(3)
         &::after
-            animation: rotate_circle 12s linear infinite
+            animation: rotate_circle 8s linear infinite forwards 1s
     &:nth-child(4)
         &::after
-            animation: rotate_circle 14s linear infinite
+            animation: rotate_circle 8s linear infinite forwards 1.5s
     &::after
         content: ""
         width: 0.75rem
@@ -505,6 +557,8 @@ nav
     align-items: center
     gap: 3rem
     @include margin_section
+    @media (max-width: 640px)
+        gap: 1.5rem
     h2
         @include h2
         background: var(--gradient-2, linear-gradient(94deg, #FFF 0.03%, rgba(115, 119, 140, 0.60) 99.97%))
@@ -516,6 +570,9 @@ nav
     display: grid
     grid-template-columns: repeat(3, 1fr)
     gap: 1.5rem
+    @media (max-width: 640px)
+        grid-template-columns: repeat(1, 1fr)
+        gap: 1rem
 
 .cases_item
     display: flex
@@ -539,10 +596,12 @@ nav
     img
         width: 100%
         border-radius: 1.5rem
-        aspect-ratio: 16/10
+        aspect-ratio: 16/11
         display: flex
         object-fit: cover
-        background: #000
+        background: url("../images/image_case.png")
+        background-size: cover
+        background-position: center
         overflow: hidden
 
 .case_details
@@ -646,6 +705,8 @@ nav
     gap: 3rem
     flex: 1 0 0
     @include margin_section
+    @media (max-width: 640px)
+        gap: 1.5rem
     h2
         @include h2
         text-align: center
@@ -658,6 +719,9 @@ nav
     display: flex
     gap: 1.5rem
     align-self: stretch
+    @media (max-width: 640px)
+        gap: 1rem
+        flex-direction: column
 
 .full_cicle_item
     display: flex
@@ -740,6 +804,8 @@ nav
     align-items: center
     gap: 3rem
     @include margin_section
+    @media (max-width: 640px)
+        gap: 1.5rem
 
 .why_choose_us_heading
     @include h2
@@ -812,6 +878,9 @@ nav
         align-self: stretch
         color: var(--white, #FFF)
         @include h4
+        br
+            @media (max-width: 640px)
+                display: none
 
 .radial_pulse
     width: 100%
@@ -835,6 +904,8 @@ nav
     gap: 3rem
     @include margin_section
     width: 100%
+    @media (max-width: 640px)
+        gap: 1.5rem
 
 .free_estimate_form_heading
     @include h1
@@ -860,6 +931,8 @@ nav
     position: relative
     background: var(--white-2, rgba(255, 255, 255, 0.02))
     border-radius: 1.25rem
+    @media (max-width: 640px)
+        flex-direction: column
     &:before
         border-radius: 1.25rem
         position: absolute
@@ -876,6 +949,7 @@ nav
     display: flex
     min-width: 45%
     min-height: 20rem
+    height: fit-content
     padding: 1.5rem
     flex-direction: column
     gap: 1.5rem
@@ -883,6 +957,9 @@ nav
     border-radius: 0.75rem
     background: var(--white-2, rgba(255, 255, 255, 0.02))
     position: relative
+    @media (max-width: 640px)
+        flex: none
+        min-height: fit-content
     &:first-child
         min-width: 90%
         min-height: fit-content
@@ -930,6 +1007,10 @@ nav
     font-weight: 500
     line-height: 110%
     position: relative
+    @media (max-width: 640px)
+        height: 2.5rem
+        padding: 0rem 1rem 0.125rem 1rem
+        font-size: 1rem
     &.highlight
         background: var(--green-gradient-1, radial-gradient(1314.79% 129.21% at 0.93% 14.92%, #9CF100 0%, #00A500 100%))
         color: #070709
@@ -953,6 +1034,8 @@ nav
     gap: 3rem
     flex: 1 0 0
     @include margin_section
+    @media (max-width: 640px)
+        gap: 1.5rem
     h2
         @include h2
         text-align: center

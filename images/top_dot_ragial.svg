@@ -1,5 +1,5 @@
 <svg width="1512" height="756" viewBox="0 0 1512 756" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1512" height="756" transform="matrix(1 0 0 -1 0 756)" fill="#070709"/>
+<rect width="1512" height="756" transform="matrix(1 0 0 -1 0 756)" fill="black"/>
 <g opacity="0.25">
 <mask id="mask0_320_50701" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1512" height="756">
 <path d="M1512 0C1512 417.527 1173.53 756 756 756C338.473 756 0 417.527 0 0H1512Z" fill="url(#paint0_radial_320_50701)"/>

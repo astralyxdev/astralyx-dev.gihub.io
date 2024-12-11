@@ -1,8 +1,8 @@
 <svg width="1512" height="756" viewBox="0 0 1512 756" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1512" height="756" fill="#070709"/>
+<rect width="1512" height="756" fill="black"/>
 <g opacity="0.25">
 <mask id="mask0_320_50700" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1512" height="756">
-<path d="M1512 756C1512 338.473 1173.53 3.93391e-06 756 3.93391e-06C338.473 3.93391e-06 0 338.473 0 756H1512Z" fill="url(#paint0_radial_320_50700)"/>
+<path d="M1512 756C1512 338.473 1173.53 0 756 0C338.473 0 0 338.473 0 756H1512Z" fill="url(#paint0_radial_320_50700)"/>
 </mask>
 <g mask="url(#mask0_320_50700)">
 <circle cx="1" cy="1" r="1" transform="matrix(1 0 0 -1 6 756)" fill="#D9D9D9"/>
