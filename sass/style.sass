@@ -582,6 +582,11 @@ nav
     background: var(--white-2, rgba(255, 255, 255, 0.02))
     position: relative
     overflow: hidden
+    &:hover
+        .case_image
+            img
+                width: 105%
+                height: 105%
     &:before
         border-radius: 1.5rem
         position: absolute
@@ -593,16 +598,24 @@ nav
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
         -webkit-mask-composite: xor
         mask-composite: exclude
-    img
+    .case_image
         width: 100%
         border-radius: 1.5rem
-        aspect-ratio: 16/11
+        aspect-ratio: 10/6
         display: flex
-        object-fit: cover
-        background: url("../images/image_case.png")
-        background-size: cover
-        background-position: center
+        transition: 0.3s ease
         overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            background: url("../images/image_case.png")
+            background-size: 100%
+            background-position: center
+            transition: 0.3s ease
 
 .case_details
     display: flex
