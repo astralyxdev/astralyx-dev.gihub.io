@@ -949,6 +949,9 @@ nav a:hover {
   position: relative;
   overflow: hidden;
 }
+.cases_item.hide {
+  display: none;
+}
 .cases_item:hover .case_image img {
   width: 105%;
   height: 105%;
@@ -1034,6 +1037,16 @@ nav a:hover {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   color: #999;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0.025rem;
+}
+@media (max-width: 640px) {
+  .case_details p {
+    font-size: 1rem;
+  }
 }
 
 .category_case {

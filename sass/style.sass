@@ -582,6 +582,8 @@ nav
     background: var(--white-2, rgba(255, 255, 255, 0.02))
     position: relative
     overflow: hidden
+    &.hide
+        display: none
     &:hover
         .case_image
             img
@@ -634,6 +636,7 @@ nav
         -webkit-line-clamp: 2
         align-self: stretch
         color: #999
+        @include bt1
 
 .category_case
     display: flex
